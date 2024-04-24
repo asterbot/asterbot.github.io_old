@@ -1,11 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Jersey+25&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
 
 /* base styles */
 * {
   margin: 0;
-  font-family: "Jersey 25", sans-serif;
+  font-family: "Source Code Pro", monospace;
   color: white;
   background-color: #0e0f0f;
+
   text-align: center;
 }
 
@@ -19,8 +20,7 @@
   border-bottom: 1px solid #f2f2f2;
 }
 .navbar h1 {
-  color: #009cda;
-  
+  color: #2fb9ef;
 }
 .navbar .links {
   margin-left: auto;
@@ -36,10 +36,36 @@
 }
 
 /* Home styles */
-.home{
-  text-align: left;
-  margin-left: 50px;
+.box-header{
+  margin-top: 40px;
 }
+
+.box-header a{
+  text-decoration: none;
+}
+
+.box-body{
+  margin-top: 10px;
+}
+
+.box-body a{
+  text-decoration: none;
+  color: white;
+}
+
+.box-body a:hover{
+  text-decoration: none;
+  color: #009cda;
+}
+
+.box-body p{
+  width: 40%
+}
+
+.vertical-timeline-element--work{
+  background: none;
+}
+
 
 /* Not found */
 .not-found{
