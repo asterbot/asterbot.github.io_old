@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+25&display=swap');
+
+/* base styles */
+* {
+  margin: 0;
+  font-family: "Jersey 25", sans-serif;
+  color: white;
+  background-color: #0e0f0f;
+  text-align: center;
+}
+
+/* Navbar styles */
+.navbar {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  max-width: 700px;
+  margin: 0 auto;
+  border-bottom: 1px solid #f2f2f2;
+}
+.navbar h1 {
+  color: #009cda;
+  
+}
+.navbar .links {
+  margin-left: auto;
+}
+.navbar a {
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 6px;
+  color: white;
+}
+.navbar a:hover {
+  color: #009cda;
+}
+
+/* Home styles */
+.home{
+  text-align: left;
+  margin-left: 50px;
+}
+
+/* Not found */
+.not-found{
+  padding: 40px;
+}
+
+.not-found h1{
+  color: orange;
+  padding-bottom: 30px;
+}
+
+.not-found p{
+  color: cyan;
+  padding-bottom: 30px;
+}
+
+
+
