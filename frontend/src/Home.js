@@ -40,7 +40,7 @@ const Home = () => {
     }
 
     const timelines = {
-        "2B": "Spring 2024 (May 2024-Present)",
+        "2B": "Spring 2024 (May 2024 - Present)",
         "WT2": "Winter 2024 (Jan - Apr 2024)",
         "2A": "Fall 2023 (Sep - Dec 2023)",
         "WT1": "Spring 2023 (May - Aug 2023)",
@@ -54,7 +54,7 @@ const Home = () => {
             <div className="box-header">
                 <Box component="section" alignItems="center" justifyContent="center" sx={{ margin: 'auto', p: 2, border: '1px dashed red', width:'50%' }}>
                     <h2>About me </h2> <br /> 
-                    Reach me via:
+                    Contact me: 
                     <a href="https://github.com/asterbot" target="_blank" rel="noreferrer"><GitHubIcon /> </a>
                     <a href="https://www.linkedin.com/in/arjun-sodhi/" target="_blank" rel="noreferrer"> <LinkedInIcon /> </a>
                     <a href="mailto:as5sodhi@uwaterloo.ca"><EmailIcon /></a>
@@ -96,7 +96,7 @@ const Home = () => {
                 <h3 className="vertical-timeline-element-title">{term.slice(0,2)==="WT" ? "Work Term " + term[2]:  term}</h3>
                 <p className="vertical-timeline-element-subtitle">{term.slice(0,2)==="WT" ? work_term_positions[term] :  "Study Term"}</p>
                 <br />
-                Courses taken:
+                Courses:
                 <ul className="list-group">
                 {courses[term].map((course)=>{
                     let res = "list-group-item list-group-item-warning";
