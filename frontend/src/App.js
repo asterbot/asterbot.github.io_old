@@ -1,7 +1,6 @@
 import Navbar from './Navbar'
 import Home from './Home'
 import Projects from './Projects'
-import Contact from './Contact'
 import NotFound from './NotFound'
 
 import { HashRouter, Route, Routes} from 'react-router-dom';
@@ -16,7 +15,6 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/projects" element={<Projects />} />
-            <Route path="/contact" element={<Contact />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
 
