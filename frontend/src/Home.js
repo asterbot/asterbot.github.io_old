@@ -104,7 +104,7 @@ const Home = () => {
                         res="list-group-item list-group-item-" + color_map[course.slice(0,4)]
                     }
                     return (
-                        <li className={res}>{course}</li>
+                        <li className={res} key={course}>{course}</li>
                     )
 
                 })}

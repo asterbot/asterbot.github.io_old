@@ -4,12 +4,12 @@ import Projects from './Projects'
 import Contact from './Contact'
 import NotFound from './NotFound'
 
-import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+import { BrowserRouter as HashRouter, Route, Routes} from 'react-router-dom';
 
 
 function App() {
   return (
-    <Router>
+    <HashRouter>
       <div className="App">
         <Navbar />
         <div className="content">
@@ -22,7 +22,7 @@ function App() {
 
         </div>
       </div>
-      </Router>
+      </HashRouter>
   );
 }
 
