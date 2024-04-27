@@ -6,7 +6,6 @@
   font-family: "Source Code Pro", monospace;
   color: white;
   background-color: #0e0f0f;
-
   text-align: center;
 }
 
@@ -17,19 +16,24 @@
   align-items: center;
   max-width: 700px;
   margin: 0 auto;
-  border-bottom: 1px solid #f2f2f2;
+  border-bottom: 1px solid rgba(158,158,158,0.298);
 }
-.navbar h1 {
+.navbar h2 {
   color: #2fb9ef;
+  background-color: transparent;
 }
 .navbar .links {
   margin-left: auto;
+  background-color: transparent;
 }
+
 .navbar a {
   margin-left: 16px;
   text-decoration: none;
   padding: 6px;
+  padding-bottom:2px;
   color: white;
+  background-color: transparent;
 }
 .navbar a:hover {
   color: #009cda;
@@ -44,6 +48,21 @@
   text-decoration: none;
 }
 
+.box-header h2 span {
+  position: relative;
+  display: inline-block;
+}
+
+.box-header h2 span::after {
+  content: '';
+  position: absolute;
+  bottom: -2px; 
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #03e9f4;
+  box-shadow: 0 0 20px #03e9f4; 
+}
 .box-body{
   margin-top: 10px;
 }

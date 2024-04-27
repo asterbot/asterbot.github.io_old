@@ -48,6 +48,7 @@ const Timeline = () => {
                 // go through the terms
                 return (
                 <VerticalTimelineElement
+                key={term}
                 className="vertical-timeline-element--work"
                 contentStyle={{ background: '#0e0f0f', color: 'white', border:'2px solid rgb(33, 150, 243)' }}
                 date={timelines[term]}
