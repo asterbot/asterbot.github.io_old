@@ -55,8 +55,8 @@ const Timeline = () => {
                     icon={term.split(" ")[0]==="WT" ? <WorkOutlineOutlinedIcon /> :  <SchoolOutlinedIcon />} // using the right icon for study/work term
                 >
                 {/* This needed to be hard-coded with slicing but will work in the general sense */}
-                <h3 className="vertical-timeline-element-title">{term.split(" ")[0]==="WT" ? "Work Term " + term[2] :  term}</h3>
-                <p className="vertical-timeline-element-subtitle">{term.split(" ")[0]==="WT" ? work_term_positions[term] :  "Study Term"}</p>
+                <h3 className="vertical-timeline-element-title">{term.slice(0,2)==="WT" ? "Work Term " + term[2] :  term}</h3>
+                <p className="vertical-timeline-element-subtitle">{term.slice(0,2)==="WT" ? work_term_positions[term] :  "Study Term"}</p>
                 <br />
                 Courses:
                 <ul className="list-group">
