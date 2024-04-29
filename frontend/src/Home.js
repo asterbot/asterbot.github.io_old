@@ -4,6 +4,7 @@ import { Box } from '@mui/material';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import EmailIcon from '@mui/icons-material/Email';
+import DoubleArrowIcon from '@mui/icons-material/DoubleArrow';
 
 // Timeline components
 import Timeline from './Timeline';
@@ -20,6 +21,8 @@ const Home = () => {
                     <a href="https://github.com/asterbot" target="_blank" rel="noreferrer"><GitHubIcon /> </a>
                     <a href="https://www.linkedin.com/in/arjun-sodhi/" target="_blank" rel="noreferrer"> <LinkedInIcon /> </a>
                     <a href="mailto:as5sodhi@uwaterloo.ca"><EmailIcon /></a>
+                    <br /><br />
+                    <a href="#/projects">Check out my Projects <DoubleArrowIcon /></a>
 
                 </Box> 
             </div>
