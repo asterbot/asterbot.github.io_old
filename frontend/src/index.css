@@ -116,6 +116,7 @@
   color: white;
 }
 
+/* Project page styles */
 .custom-overlay__caption {
   background-color: rgba(0, 0, 0, 0);
   max-height: 240px;
@@ -128,9 +129,10 @@
   z-index: 1;
 }
 
+/* To overwrite the background colors they were inheriting unfortunately */
 .ReactGridGallery_custom-overlay {
   background-color: transparent;
-  backdrop-filter: blur(5px); 
+  backdrop-filter: blur(1px); 
 }
 
 .ReactGridGallery_tile-icon-bar{

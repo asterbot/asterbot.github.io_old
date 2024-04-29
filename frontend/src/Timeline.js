@@ -48,14 +48,14 @@ const Timeline = () => {
                 // go through the terms
                 return (
                 <VerticalTimelineElement
-                key={term}
-                className="vertical-timeline-element--work"
-                contentStyle={{ background: '#0e0f0f', color: 'white', border:'2px solid rgb(33, 150, 243)' }}
-                date={timelines[term]}
-                icon={term.slice(0,2)==="WT" ? <WorkOutlineOutlinedIcon /> :  <SchoolOutlinedIcon />} // using the right icon for study/work term
+                    key={term}
+                    className="vertical-timeline-element--work"
+                    contentStyle={{ background: '#0e0f0f', color: 'white', border:'2px solid rgb(33, 150, 243)' }}
+                    date={timelines[term]}
+                    icon={term.slice(0,2)==="WT" ? <WorkOutlineOutlinedIcon /> :  <SchoolOutlinedIcon />} // using the right icon for study/work term
                 >
                 {/* This needed to be hard-coded with slicing but will work in the general sense */}
-                <h3 className="vertical-timeline-element-title">{term.slice(0,2)==="WT" ? "Work Term " + term[2]:  term}</h3>
+                <h3 className="vertical-timeline-element-title">{term.slice(0,2)==="WT" ? "Work Term " + term[2] :  term}</h3>
                 <p className="vertical-timeline-element-subtitle">{term.slice(0,2)==="WT" ? work_term_positions[term] :  "Study Term"}</p>
                 <br />
                 Courses:

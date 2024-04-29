@@ -2,6 +2,7 @@ import Navbar from './Navbar'
 import Home from './Home'
 import Projects from './Projects'
 import NotFound from './NotFound'
+import ProjectDetails from './ProjectDetails';
 
 import { HashRouter, Route, Routes} from 'react-router-dom';
 
@@ -15,6 +16,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/projects" element={<Projects />} />
+            <Route path="/projects/:id" element={<ProjectDetails />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
 

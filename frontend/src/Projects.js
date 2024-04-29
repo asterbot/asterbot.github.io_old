@@ -1,20 +1,26 @@
 import { Box } from '@mui/material';
-import { auto } from '@popperjs/core';
 
 import { Gallery } from "react-grid-gallery";
 
+import { useNavigate } from 'react-router-dom';
+
 const Projects = () => {
+
+    const navigate = useNavigate();
+
+    const PROJECT_IMAGES = "./img/project-thumbnails/" //folder where project images are stored
+
     const tagStyle = {
-        backgroundColor: 'lightblue',
+        backgroundColor: 'white',
         color: 'black',
         borderRadius: '0.4em',
+        border: '2px solid blue'
     };
 
     const images = [
         {
-           src: require("./img/project-thumbnails/age.png"),
-           width: auto,
-           height: auto,
+           key: "age",
+           src: require(PROJECT_IMAGES+"age.png"),
            tags: [
             { value: "C++", title: "C++" },
             { value: "OOP", title: "OOP" },
@@ -27,33 +33,25 @@ const Projects = () => {
           ),
         },
         {
-           src: require("./img/project-thumbnails/age.png"),
-           width: auto,
-           height: auto,
+           src: require(PROJECT_IMAGES+"age.png"),
            tags: [
             { value: "C++", title: "C++" },
             { value: "OOP", title: "OOP" },
          ],
         },
         {
-           src: require("./img/project-thumbnails/age.png"),
-           width: auto,
-           height: auto,
+           src: require(PROJECT_IMAGES+"age.png"),
            tags: [
             { value: "C++", title: "C++" },
             { value: "OOP", title: "OOP" },
          ],
         },
         {
-            src: require("./img/project-thumbnails/age.png"),
-            width: auto,
-           height: auto,
+            src: require(PROJECT_IMAGES+"age.png"),
             caption: "After Rain (Jeshu John - designerspics.com)",
          },
          {
-            src: require("./img/project-thumbnails/age.png"),
-            width: auto,
-           height: auto,
+            src: require(PROJECT_IMAGES+"age.png"),
             tags: [
                { value: "Ocean", title: "Ocean" },
                { value: "People", title: "People" },
@@ -61,11 +59,14 @@ const Projects = () => {
             alt: "Boats (Jeshu John - designerspics.com)",
          },
          {
-            src: require("./img/project-thumbnails/age.png"),
-            width: auto,
-           height: auto,
+            src: require(PROJECT_IMAGES+"age.png"),
          },
      ];
+
+     const openProject = (index,image)=>{
+        console.log(image.key);
+        navigate('/projects/' + image.key);
+     }
      
     return ( 
         <div className="projects">
@@ -74,7 +75,7 @@ const Projects = () => {
                     <h2><span>Project Gallery</span></h2>
                 </Box>
             </div>
-            <Gallery images={images} margin={120} enableImageSelection={false} tagStyle={tagStyle} />
+            <Gallery images={images} margin={120} enableImageSelection={false} tagStyle={tagStyle} onClick={openProject}/>
         </div>
      );
 }
