@@ -1,8 +1,8 @@
 import { Box } from '@mui/material';
-
 import { Gallery } from "react-grid-gallery";
-
 import { useNavigate } from 'react-router-dom';
+
+import projectData from './data/projects.json';
 
 const Projects = () => {
 
@@ -17,51 +17,22 @@ const Projects = () => {
         border: '2px solid blue'
     };
 
-    const images = [
-        {
-           key: "age",
-           src: require(PROJECT_IMAGES+"age.png"),
-           tags: [
-            { value: "C++", title: "C++" },
-            { value: "OOP", title: "OOP" },
-         ],
-           caption: "ASCII Game Engine",
-           customOverlay: (
-            <div className="custom-overlay__caption">
-              <div>ASCII Game Engine</div>
-            </div>
-          ),
-        },
-        {
-           src: require(PROJECT_IMAGES+"age.png"),
-           tags: [
-            { value: "C++", title: "C++" },
-            { value: "OOP", title: "OOP" },
-         ],
-        },
-        {
-           src: require(PROJECT_IMAGES+"age.png"),
-           tags: [
-            { value: "C++", title: "C++" },
-            { value: "OOP", title: "OOP" },
-         ],
-        },
-        {
-            src: require(PROJECT_IMAGES+"age.png"),
-            caption: "After Rain (Jeshu John - designerspics.com)",
-         },
-         {
-            src: require(PROJECT_IMAGES+"age.png"),
-            tags: [
-               { value: "Ocean", title: "Ocean" },
-               { value: "People", title: "People" },
-            ],
-            alt: "Boats (Jeshu John - designerspics.com)",
-         },
-         {
-            src: require(PROJECT_IMAGES+"age.png"),
-         },
-     ];
+   // Creating the images array
+    let images=[]
+    for (var project in projectData){
+        let temp={
+            key: project,
+            src: require(PROJECT_IMAGES + projectData[project]["id"]+".png"),
+            caption: projectData[project]["title"],
+            customOverlay:(
+                <div className="custom-overlay__caption">
+                    {projectData[project]["title"]}
+                </div>
+            ) 
+        }
+
+        images.push(temp);
+    }
 
      const openProject = (index,image)=>{
         console.log(image.key);
