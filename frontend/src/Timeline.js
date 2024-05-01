@@ -52,7 +52,7 @@ const Timeline = () => {
                     className="vertical-timeline-element--work"
                     contentStyle={{ background: '#0e0f0f', color: 'white', border:'2px solid rgb(33, 150, 243)' }}
                     date={timelines[term]}
-                    icon={term.split(" ")[0]==="WT" ? <WorkOutlineOutlinedIcon /> :  <SchoolOutlinedIcon />} // using the right icon for study/work term
+                    icon={term.slice(0,2)==="WT" ? <WorkOutlineOutlinedIcon /> :  <SchoolOutlinedIcon />} // using the right icon for study/work term
                 >
                 {/* This needed to be hard-coded with slicing but will work in the general sense */}
                 <h3 className="vertical-timeline-element-title">{term.slice(0,2)==="WT" ? "Work Term " + term[2] :  term}</h3>
