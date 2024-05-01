@@ -53,12 +53,14 @@
   color: #009cda;
 }
 
-.box-header h2 span {
+.box-header h2 span,
+.box-header h3 span {
   position: relative;
   display: inline-block;
 }
 
-.box-header h2 span::after {
+.box-header h2 span::after,
+.box-header h3 span::after {
   content: '';
   position: absolute;
   bottom: -2px; 
@@ -140,4 +142,32 @@
 }
 .ReactGridGallery_tile-bottom-bar{
   background-color: transparent;
+}
+
+
+/* Project details */
+
+svg{
+  background-color: transparent;
+}
+
+.react-slideshow-container .default-nav{
+  background: #dc3545 !important;
+  border-radius: 25% !important;
+}
+
+.tools-and-stuff {
+  list-style: none;
+  display: inline-block;
+}
+
+.tools-and-stuff li {
+  text-align: left;
+  display: inline-block;
+}
+
+.tools-and-stuff li:before {
+  content: '✓';
+  margin-right: 5px; 
+  margin-left: 20px;
 }
