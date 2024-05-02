@@ -147,6 +147,18 @@
 
 /* Project details */
 
+.slideshow-img{
+  width:40%;
+}
+
+.react-slideshow-container .nav:first-of-type{
+  left: 28% !important;
+}
+
+.react-slideshow-container .nav:last-of-type{
+  right:28% !important;
+}
+
 svg{
   background-color: transparent;
 }

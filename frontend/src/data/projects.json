@@ -3,7 +3,7 @@
             "id":"age",
             "title":"ASCII Game Engine",
             "tnt":["C++","OOP","Ncurses"],
-            "description":"This a game engine",
+            "description":"This a game engine<br/>hi",
             "slides":4
         },
         "age2":{

@@ -39,7 +39,7 @@ const ProjectDetails = () => {
                 <Slide>
                     {slideImages.map((slideImage, index)=> (
                         <div key={index}>
-                        <img src={require(`${slideImage.url}`)} alt="slideshow"/>
+                        <img className="slideshow-img" src={require(`${slideImage.url}`)} alt="slideshow"/>
                         </div>
                     ))} 
                 </Slide>
@@ -57,9 +57,10 @@ const ProjectDetails = () => {
                 </ul>
                 
                 <Box component="section" alignItems="center" justifyContent="center" sx={{ margin: 'auto', p: 2, width:'50%' }}>
-                    <h3><span>Tools & Technologies</span></h3>
+                    <h3><span>Description</span></h3>
                 </Box>
-                {description}
+
+                <div dangerouslySetInnerHTML={{ __html: description }} />
                 
             </div>
         </div>
