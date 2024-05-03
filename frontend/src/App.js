@@ -9,8 +9,9 @@ import { HashRouter, Route, Routes} from 'react-router-dom';
 
 function App() {
   return (
-    <HashRouter>
+    
       <div className="App">
+        <HashRouter>
         <Navbar />
         <div className="content">
           <Routes>
@@ -21,8 +22,10 @@ function App() {
           </Routes>
 
         </div>
+        </HashRouter>
+        {/* TODO: Add footer */}
       </div>
-      </HashRouter>
+      
   );
 }
 
