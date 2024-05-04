@@ -22,8 +22,16 @@ const Projects = () => {
     for (var project in projectData){
         let temp={
             key: project,
-            src: require(PROJECT_IMAGES + projectData[project]["id"]+".png"),
+            src: require(PROJECT_IMAGES + project+".png"),
+            width: 255  ,
+            height: 174,
             caption: projectData[project]["title"],
+            thumbnailCaption: projectData[project]["title"],
+            // TODO: Maybe add tags at some point with an actually nice formatting
+            // tags: [
+            //     { value: "Ocean", title: "Ocean" },
+            //     { value: "People", title: "People" },
+            //  ],
             customOverlay:(
                 <div className="custom-overlay__caption">
                     {projectData[project]["title"]}
@@ -35,7 +43,6 @@ const Projects = () => {
     }
 
      const openProject = (index,image)=>{
-        console.log(image.key);
         navigate('/projects/' + image.key);
      }
      

@@ -3,36 +3,14 @@
             "id":"age",
             "title":"ASCII Game Engine",
             "tnt":["C++","OOP", "Game Design"],
-            "slides":4
+            "slides":4,
+            "sources":[]
         },
-        "age2":{
+        "memotion":{
             "id":"age",
-            "title":"ASCII Game Engine",
-            "tnt":["C++","OOP","Ncurses"],
-            "slides":4
-        },
-        "age3":{
-            "id":"age",
-            "title":"ASCII Game Engine",
-            "tnt":["C++","OOP","Ncurses"],
-            "slides":4
-        },
-        "age4":{
-            "id":"age",
-            "title":"ASCII Game Engine",
-            "tnt":["C++","OOP","Ncurses"],
-            "slides":4
-        },
-        "age5":{
-            "id":"age",
-            "title":"ASCII Game Engine",
-            "tnt":["C++","OOP","Ncurses"],
-            "slides":4
-        },
-        "age6":{
-            "id":"age",
-            "title":"ASCII Game Engine",
-            "tnt":["C++","OOP","Ncurses"],
-            "slides":4
+            "title":"mEmotion",
+            "tnt":["React TypeScript", "Python", "Flask", "REST APIs"],
+            "slides":4,
+            "sources":[]
         }
 }

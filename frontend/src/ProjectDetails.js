@@ -9,9 +9,11 @@ import projectData from './data/projects.json';
 // Until I find a better solution, I will import all the project pages here
 // TODO: try to find a better solution to generalize this - this is too iffy but it works for now
 import Age  from './descriptions/age'
+import Memotion from "./descriptions/memotion";
 
 const id_component_map = {
-    "age": <Age />
+    "age": <Age />,
+    "memotion": <Memotion />
 }
 
 const ProjectDetails = () => {
@@ -20,7 +22,7 @@ const ProjectDetails = () => {
 
     const data = projectData[id];
 
-    const SLIDES_PATH = './img/projects/' + data["id"];
+    const SLIDES_PATH = './img/projects/' + id;
 
     const num_slides = data["slides"];
 
@@ -51,7 +53,7 @@ const ProjectDetails = () => {
                 </Slide>
 
                 <Box component="section" alignItems="center" justifyContent="center" sx={{ margin: 'auto', p: 2, width:'50%' }}>
-                    <h3><span>Tools & Technologies</span></h3>
+                    <h3><span>Tools & Techniques</span></h3>
                 </Box>
                 
                 <ul className="tools-and-stuff">

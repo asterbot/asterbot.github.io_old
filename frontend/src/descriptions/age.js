@@ -17,7 +17,7 @@ const Age = () => {
             <br />
             The engine has flexibility, allowing the client to encode the interaction/movement logic of the entities.
             <br />
-            I utilized various OOP design patterns, including <a href="https://en.wikipedia.org/wiki/Observer_pattern">Observer Pattern</a>, <a href="https://en.wikipedia.org/wiki/Iterator_pattern">Iterator Pattern</a> and some features of C++ including <a href="https://en.wikipedia.org/wiki/Non-virtual_interface_pattern">NVI idiom</a> and <a href="https://en.wikipedia.org/wiki/Resource_acquisition_is_initialization">RAII</a>.
+            I utilized various OOP design patterns, including <a href="https://en.wikipedia.org/wiki/Observer_pattern">Observer Pattern</a>, <a href="https://en.wikipedia.org/wiki/Iterator_pattern">Iterator Pattern</a> and features of C++ including <a href="https://en.wikipedia.org/wiki/Non-virtual_interface_pattern">NVI idiom</a> and <a href="https://en.wikipedia.org/wiki/Resource_acquisition_is_initialization">RAII</a>.
             <br />
             <br />
             I designed this project for an enriched OOP course, but I cannot share the source code abiding to <a href="https://uwaterloo.ca/secretariat/policies-procedures-guidelines/policy-71">Policy 71</a>.     
