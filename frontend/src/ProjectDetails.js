@@ -6,6 +6,13 @@ import 'react-slideshow-image/dist/styles.css'
 
 import projectData from './data/projects.json';
 
+// Until I find a better solution, I will import all the project pages here
+// TODO: try to find a better solution to generalize this - this is too iffy but it works for now
+import Age  from './descriptions/age'
+
+const id_component_map = {
+    "age": <Age />
+}
 
 const ProjectDetails = () => {
 
@@ -18,7 +25,6 @@ const ProjectDetails = () => {
     const num_slides = data["slides"];
 
     const tools = data["tnt"];
-    const description = data["description"]
 
     let slideImages=[];
     for (let i=1; i<=num_slides; ++i){
@@ -60,7 +66,7 @@ const ProjectDetails = () => {
                     <h3><span>Description</span></h3>
                 </Box>
 
-                <div dangerouslySetInnerHTML={{ __html: description }} />
+                {id_component_map[id]}
                 
             </div>
         </div>

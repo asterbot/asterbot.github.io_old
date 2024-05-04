@@ -183,3 +183,22 @@ svg{
   margin-right: 5px; 
   margin-left: 20px;
 }
+
+.project-description{
+  margin-left: 27%;
+  margin-right: 27%;
+  text-align: left;
+}
+
+.normal-list {
+  list-style: none;
+  display: inline-block;
+}
+
+.normal-list li {
+  text-align: left;
+}
+
+.normal-list li:before {
+  content: '•';
+}

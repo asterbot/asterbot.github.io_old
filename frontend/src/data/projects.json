@@ -2,43 +2,37 @@
        "age":{
             "id":"age",
             "title":"ASCII Game Engine",
-            "tnt":["C++","OOP","Ncurses"],
-            "description":"This a game engine<br/>hi",
+            "tnt":["C++","OOP", "Game Design"],
             "slides":4
         },
         "age2":{
             "id":"age",
             "title":"ASCII Game Engine",
             "tnt":["C++","OOP","Ncurses"],
-            "description":"This a game engine",
             "slides":4
         },
         "age3":{
             "id":"age",
             "title":"ASCII Game Engine",
             "tnt":["C++","OOP","Ncurses"],
-            "description":"This a game engine",
             "slides":4
         },
         "age4":{
             "id":"age",
             "title":"ASCII Game Engine",
             "tnt":["C++","OOP","Ncurses"],
-            "description":"This a game engine",
             "slides":4
         },
         "age5":{
             "id":"age",
             "title":"ASCII Game Engine",
             "tnt":["C++","OOP","Ncurses"],
-            "description":"This a game engine",
             "slides":4
         },
         "age6":{
             "id":"age",
             "title":"ASCII Game Engine",
             "tnt":["C++","OOP","Ncurses"],
-            "description":"This a game engine",
             "slides":4
         }
 }
