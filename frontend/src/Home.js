@@ -17,8 +17,7 @@ const Home = () => {
             <div className="box-header">
                 <Box component="section" alignItems="center" justifyContent="center" sx={{ margin: 'auto', p: 2, width:'50%' }}>
                     <h2><span>About me</span> </h2> <br /> 
-                    Contact me: 
-                    <a href="https://github.com/asterbot" target="_blank" rel="noreferrer"><GitHubIcon /> </a>
+                    Contact me: <a href="https://github.com/asterbot" target="_blank" rel="noreferrer"><GitHubIcon /> </a>
                     <a href="https://www.linkedin.com/in/arjun-sodhi/" target="_blank" rel="noreferrer"> <LinkedInIcon /> </a>
                     <a href="mailto:as5sodhi@uwaterloo.ca"><EmailIcon /></a>
                     <br /><br />
