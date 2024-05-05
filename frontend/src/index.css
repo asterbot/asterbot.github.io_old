@@ -107,8 +107,9 @@
 }
 
 .responsive {
-  max-width: 100%;
-  height: auto;
+  height: 16em;
+  width: auto;
+  object-fit: contain;
 }
 
 /* Not found */

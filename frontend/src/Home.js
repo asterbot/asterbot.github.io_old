@@ -1,10 +1,12 @@
 import { Box } from '@mui/material';
+import ScrollToTop from "react-scroll-to-top";
 
 // Icons used in this page
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import EmailIcon from '@mui/icons-material/Email';
 import DoubleArrowIcon from '@mui/icons-material/DoubleArrow';
+
 
 // Timeline components
 import Timeline from './Timeline';
@@ -36,7 +38,8 @@ const Home = () => {
                         </p>
                     </div>
                     <div className="image-container">
-                        <img className="responsive" src={require('./img/temp.png')} alt="hi" height='400'/>
+                        {/* NOTE: height is hardcoded, find a better way  */}
+                        <img className="responsive" src={require('./img/temp.png')} alt="hi"/>
                     </div>
                     </div>
                 </Box> 
@@ -53,6 +56,8 @@ const Home = () => {
             
 
             <Timeline />
+
+            <ScrollToTop smooth />
 
         </div>
 
