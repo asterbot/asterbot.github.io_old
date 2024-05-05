@@ -72,20 +72,19 @@
 }
 .box-body{
   margin-top: 10px;
+  width: 80%;
+  display: inline-block;
 }
 
 .box-body a{
   text-decoration: none;
   color: white;
+  background-color: transparent;
 }
 
 .box-body a:hover{
   text-decoration: none;
   color: #009cda;
-}
-
-.box-body p{
-  width: 40%
 }
 
 .vertical-timeline-element--work{
