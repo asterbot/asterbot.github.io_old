@@ -28,22 +28,19 @@ const Home = () => {
 
             <div className="box-body">
                 <Box component="section" textAlign="left" sx={{ p: 2, border: '2px solid grey', margin: 'auto', width: '80%' }}>
-                        <table>
-                            <tr>
-                                <td>
-                                    <p>Hi there! <br />I'm Arjun, and I'm an undergraduate student pursuing a Bachelor's of Computer Science at the <a href="https://uwaterloo.ca" target="_blank" rel="noreferrer">University of Waterloo</a>. <br /> <br />
-                                        I am doing a specialization in Artificial Intelligence(AI) as well as a minor in Combinatorics and Optimization (C&O).   <br /> <br />
-                                        <i>Live, Learn, Code!</i>
-                                    </p>
-                                </td>
-                                <td>
-                                    <img src={require('./img/temp.png')} alt="hi" height='400'/>
-                                </td>
-                            </tr>
-                        </table>
-                            
+                    <div className="responsive-container">
+                    <div className="text-container">
+                        <p>Hi there! <br />I'm Arjun, and I'm an undergraduate student pursuing a Bachelor's of Computer Science at the <a href="https://uwaterloo.ca" target="_blank" rel="noreferrer">University of Waterloo</a>. <br /> <br />
+                        I am doing a specialization in Artificial Intelligence(AI) as well as a minor in Combinatorics and Optimization (C&O).   <br /> <br />
+                        <i>Live, Learn, Code!</i>
+                        </p>
+                    </div>
+                    <div className="image-container">
+                        <img className="responsive" src={require('./img/temp.png')} alt="hi" height='400'/>
+                    </div>
+                    </div>
                 </Box> 
-            </div>
+                </div>
 
             <br />
             <hr />

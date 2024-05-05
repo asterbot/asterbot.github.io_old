@@ -91,6 +91,25 @@
   background: none;
 }
 
+.responsive-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.text-container, .image-container {
+  flex: 1 0 100%;
+}
+
+@media (min-width: 768px) {
+  .text-container, .image-container {
+    flex: 1;
+  }
+}
+
+.responsive {
+  max-width: 100%;
+  height: auto;
+}
 
 /* Not found */
 .not-found{
