@@ -196,6 +196,10 @@ svg{
   text-align: left;
 }
 
+.project-description a{
+  color: #c54282;
+}
+
 .normal-list {
   list-style: none;
   display: inline-block;
