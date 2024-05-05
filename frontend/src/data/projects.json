@@ -1,16 +1,34 @@
 {
        "age":{
-            "id":"age",
             "title":"ASCII Game Engine",
             "tnt":["C++","OOP", "Game Design"],
             "slides":4,
-            "sources":[]
+            "sources":{}
         },
         "memotion":{
-            "id":"age",
             "title":"mEmotion",
             "tnt":["React TypeScript", "Python", "Flask", "REST APIs"],
             "slides":4,
-            "sources":[]
+            "sources": {
+                "GitHub":"https://github.com/asterbot/Serenity-Hacks",
+                "DevPost":"https://devpost.com/software/memotion-w62jro"
+            }
+        },
+        "ai-earth":{
+            "title":"AI-Earth Hack 2024",
+            "tnt":["Python", "Flask", "React.js", "REST APIs","Tensorflow","Pytorch"],
+            "slides":4,
+            "sources":{
+                "GitHub": "https://github.com/asterbot/AIEarthhack2024"
+            }
+        },
+        "music4mood":{
+            "title": "Music4mood",
+            "tnt":["Python", "Flask", "Javascript"],
+            "slides":3,
+            "sources":{
+                "GitHub": "https://github.com/asterbot/Music4mood",
+                "DevPost": "https://devpost.com/software/music4mood"
+            }
         }
 }

@@ -23,7 +23,7 @@ const Projects = () => {
         let temp={
             key: project,
             src: require(PROJECT_IMAGES + project+".png"),
-            width: 255  ,
+            width: 280,
             height: 174,
             caption: projectData[project]["title"],
             thumbnailCaption: projectData[project]["title"],

@@ -10,10 +10,14 @@ import projectData from './data/projects.json';
 // TODO: try to find a better solution to generalize this - this is too iffy but it works for now
 import Age  from './descriptions/age'
 import Memotion from "./descriptions/memotion";
+import AiEarth from "./descriptions/ai-earth";
+import Music4Mood from "./descriptions/music4mood";
 
 const id_component_map = {
     "age": <Age />,
-    "memotion": <Memotion />
+    "memotion": <Memotion />,
+    "ai-earth": <AiEarth />,
+    "music4mood": <Music4Mood />
 }
 
 const ProjectDetails = () => {
@@ -27,6 +31,8 @@ const ProjectDetails = () => {
     const num_slides = data["slides"];
 
     const tools = data["tnt"];
+
+    const sources = data["sources"];
 
     let slideImages=[];
     for (let i=1; i<=num_slides; ++i){
@@ -44,6 +50,18 @@ const ProjectDetails = () => {
                     <h2><span>{data["title"]}</span></h2>
                 </Box>
 
+                {Object.keys(sources).length>0 && "Check it out:"}
+                <br />
+
+                {Object.keys(sources).map((source, index)=>{
+                    return(
+                        <div className="tag">
+                            <a href={sources[source]} target="_blank" rel="noreferrer">{source}</a> 
+                            {index!== Object.keys(sources).length-1 ? <>&nbsp; &middot; &nbsp;</> : null}
+                        </div>
+                    )
+                })}
+
                 <Slide>
                     {slideImages.map((slideImage, index)=> (
                         <div key={index}>
@@ -59,7 +77,7 @@ const ProjectDetails = () => {
                 <ul className="tools-and-stuff">
                 {tools.map((tool)=>{
                     return(
-                        <li>{tool}</li>
+                        <li key={tool}>{tool}</li>
                     )
                 })}
                 </ul>

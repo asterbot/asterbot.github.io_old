@@ -212,3 +212,8 @@ svg{
 .normal-list li:before {
   content: '•';
 }
+
+
+.tag{
+  display: inline
+}

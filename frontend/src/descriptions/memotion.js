@@ -7,8 +7,8 @@ const Memotion = () => {
             <br />
             The app allows for the following:
             <ul className="normal-list">
-                <li>Record memos and get relatively fast AI analysis</li>
-                <li>Save and organize old memos</li>
+                <li key='1'>Record memos and get relatively fast AI analysis</li>
+                <li key='2'>Save and organize old memos</li>
             </ul>
             <br />
             The app provides user-friendly AI generated graphs, which include sentimental analysis. 
@@ -19,6 +19,8 @@ const Memotion = () => {
             <br />
             The frontend was built with <code>React TS</code>. The user audio is sent as a <code>wav</code> file to the backend which does the analysis
             and sends the data back to the frontend.
+            <br /><br />
+            This was a submission to <a href="https://serenityhacks.devpost.com/">Serenity Hacks 2024</a>.
         </div>
      );
 }
