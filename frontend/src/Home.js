@@ -1,5 +1,4 @@
 import { Box } from '@mui/material';
-import ScrollToTop from "react-scroll-to-top";
 
 // Icons used in this page
 import GitHubIcon from '@mui/icons-material/GitHub';
@@ -56,8 +55,6 @@ const Home = () => {
             
 
             <Timeline />
-
-            <ScrollToTop smooth />
 
         </div>
 

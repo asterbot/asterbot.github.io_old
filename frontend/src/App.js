@@ -5,7 +5,7 @@ import NotFound from './NotFound'
 import ProjectDetails from './ProjectDetails';
 
 import { HashRouter, Route, Routes} from 'react-router-dom';
-
+import ScrollToTop from "react-scroll-to-top";
 
 function App() {
   return (
@@ -24,6 +24,8 @@ function App() {
         </div>
         </HashRouter>
         {/* TODO: Add footer */}
+
+        <ScrollToTop smooth />
       </div>
       
   );
