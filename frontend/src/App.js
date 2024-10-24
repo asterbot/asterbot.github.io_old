@@ -3,6 +3,7 @@ import Home from './Home'
 import Projects from './Projects'
 import NotFound from './NotFound'
 import ProjectDetails from './ProjectDetails';
+import Blogs from './Blogs';
 
 import { HashRouter, Route, Routes} from 'react-router-dom';
 import ScrollToTop from "react-scroll-to-top";
@@ -18,6 +19,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/projects/:id" element={<ProjectDetails />} />
+            <Route path="/blogs" element={<Blogs/>} />
             <Route path="*" element={<NotFound />} />
           </Routes>
 
