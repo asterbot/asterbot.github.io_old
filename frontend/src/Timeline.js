@@ -19,6 +19,7 @@ const Timeline = () => {
 
     // Update all of these as you keep going
     const courses = {
+        "WT3": [],
         "2B": ["CS 241: Foundations of Sequential Programs", "CS 240: Data Structures and Data Management", "MATH 235: Linear Algebra II", "PHYS 234: Quantum Physics I", "FR 151: Basic French I", "ENGL 210E: Genres of Technical Communication"],
         "WT2": ["STAT 231: Statistics"],
         "2A": ["CS 246E: Object-Oriented Software Development (Enriched)", "CS 245: Logic & Computation", "CS 251: Computer Organization and Design", "MATH 249: Introduction to Combinatorics (Advanced Level)", "STAT 230: Probability", "ECON 102: Introduction to Macroeconomics"],
@@ -28,8 +29,9 @@ const Timeline = () => {
     }
 
     const work_term_positions = {
-        "WT1": "Finance Project: Financial Investment Coach @ WEA Program",
-        "WT2":"CS136(L) Instructional Support Assistant @ University of Waterloo"
+        "WT1": "Finance Project: Financial Investment Coach @ WEA",
+        "WT2": "CS136(L) Instructional Support Assistant @ University of Waterloo",
+        "WT3": "Software Developer - Performance Intern @ Ford Canada",
     }
 
     const timelines = {
