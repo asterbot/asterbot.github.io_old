@@ -38,7 +38,7 @@ const Home = () => {
                     </div>
                     <div className="image-container">
                         {/* NOTE: height is hardcoded, find a better way  */}
-                        <img className="responsive" src={require('./img/website.jpg')} alt="hi"/>
+                        <img className="responsive" src={require('./img/website.jpg')} loading="lazy" alt="hi"/>
                     </div>
                     </div>
                 </Box> 
