@@ -236,3 +236,31 @@ svg{
 .tag{
   display: inline
 }
+
+/* GitGraph */
+.git-graph-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.git-graph-svg {
+  width: 100%;
+  max-width: 42rem;
+}
+
+.commit-link {
+  color: white;
+  text-decoration: underline;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.commit-link:hover {
+  color: #e0e0e0;  /* lighter white for hover effect */
+}
+
+.commit-text {
+  font-size: 0.875rem;  /* text-sm equivalent */
+}
