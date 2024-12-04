@@ -264,3 +264,17 @@ svg{
 .commit-text {
   font-size: 0.875rem;  /* text-sm equivalent */
 }
+
+/* Override the styles for the code block */
+.react-syntax-highlighter {
+  background: transparent !important;
+  padding: 0 !important;  /* Reset padding */
+  margin: 0 !important;   /* Reset margin */
+}
+
+/* Neutralize the line highlighting (if applicable) */
+.react-syntax-highlighter .line-highlight {
+  background: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+}

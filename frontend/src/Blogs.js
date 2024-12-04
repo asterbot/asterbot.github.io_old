@@ -1,4 +1,5 @@
 import React from 'react';
+import Blog from './Blogs/blog_test';
 
 // Reusable CommitLink Component
 const CommitLink = ({ message, url }) => {
@@ -75,78 +76,82 @@ const BranchLine = ({
 
 const GitGraphVisualization = () => {
   return (
-    <div className="git-graph-container">
-      <svg 
-        viewBox="0 0 400 300" 
-        className="git-graph-svg"
-      >
-        {/* Main branch vertical line */}
-        <BranchLine startX={200} startY={50} endX={200} endY={250} />
-        
-        {/* Commits */}
-        <Commit 
-          x={200} 
-          y={250} 
-          message="Initial commit" 
-          url="/initial" 
-        />
+    <div>
+      <div className="git-graph-container">
+        <svg 
+          viewBox="0 0 400 300" 
+          className="git-graph-svg"
+        >
+          {/* Main branch vertical line */}
+          <BranchLine startX={200} startY={50} endX={200} endY={250} />
+          
+          {/* Commits */}
+          <Commit 
+            x={200} 
+            y={250} 
+            message="Initial commit" 
+            url="/initial" 
+          />
 
-        <Commit 
-          x={200} 
-          y={120} 
-          message="Lol" 
-          url="/master-update" 
-          color="blue" 
-        />
+          <Commit 
+            x={200} 
+            y={120} 
+            message="Lol" 
+            url="/master-update" 
+            color="blue" 
+          />
 
-        {/* Feature branches */}
-        <BranchLine 
-          startX={200} 
-          startY={120} 
-          endX={250} 
-          endY={80} 
-          color="blue" 
-        />
-        <Commit 
-          x={250} 
-          y={80} 
-          message="Hi" 
-          url="/feature1" 
-          color="blue"
-        />
+          {/* Feature branches */}
+          <BranchLine 
+            startX={200} 
+            startY={120} 
+            endX={250} 
+            endY={80} 
+            color="blue" 
+          />
+          <Commit 
+            x={250} 
+            y={80} 
+            message="Hi" 
+            url="/feature1" 
+            color="blue"
+          />
 
-        <BranchLine 
-          startX={200} 
-          startY={120} 
-          endX={150} 
-          endY={80} 
-          color="turquoise" 
-        />
-        <Commit 
-          x={150} 
-          y={80} 
-          message="Bye" 
-          url="/feature2" 
-          color="turquoise"
-        />
+          <BranchLine 
+            startX={200} 
+            startY={120} 
+            endX={150} 
+            endY={80} 
+            color="turquoise" 
+          />
+          <Commit 
+            x={150} 
+            y={80} 
+            message="Bye" 
+            url="/feature2" 
+            color="turquoise"
+          />
 
-        <BranchLine 
-          startX={200} 
-          startY={120} 
-          endX={250} 
-          endY={80} 
-          color="blue" 
-        />
-        <Commit 
-          x={250} 
-          y={80} 
-          message="Hi" 
-          url="/feature1" 
-          color="blue"
-        />
+          <BranchLine 
+            startX={200} 
+            startY={120} 
+            endX={250} 
+            endY={80} 
+            color="blue" 
+          />
+          <Commit 
+            x={250} 
+            y={80} 
+            message="Hi" 
+            url="/feature1" 
+            color="blue"
+          />
 
-      </svg>
+        </svg>
+      </div>
+      <Blog />
     </div>
+
   );
 };
 
