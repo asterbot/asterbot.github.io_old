@@ -4,8 +4,6 @@ import { Box } from '@mui/material';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import EmailIcon from '@mui/icons-material/Email';
-import DoubleArrowIcon from '@mui/icons-material/DoubleArrow';
-
 
 // Timeline components
 import Timeline from './Timeline';
@@ -22,13 +20,11 @@ const Home = () => {
                     <a href="https://www.linkedin.com/in/arjun-sodhi/" target="_blank" rel="noreferrer"> <LinkedInIcon /> </a>
                     <a href="mailto:as5sodhi@uwaterloo.ca"><EmailIcon /></a>
                     <br /><br />
-                    <a href="#/projects">Check out my Projects <DoubleArrowIcon /></a>
-
                 </Box> 
             </div>
 
             <div className="box-body">
-                <Box component="section" textAlign="left" sx={{ p: 2, border: '2px solid grey', margin: 'auto', width: '80%' }}>
+                <Box component="section" textAlign="left" sx={{ p: 2, margin: 'auto', width: '80%' }}>
                     <div className="responsive-container">
                     <div className="text-container">
                         Hi there! <br />
@@ -39,7 +35,7 @@ const Home = () => {
                         <i>Code, chaos, create!</i>
                     </div>
                     <div className="image-container">
-                        {/* NOTE: height is hardcoded, find a better way  */}
+                        {/* HACK: height is hardcoded, find a better way  */}
                         <img className="responsive" src={require('./img/website.jpg')} loading="lazy" alt="hi"/>
                     </div>
                     </div>

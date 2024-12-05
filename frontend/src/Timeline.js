@@ -31,12 +31,12 @@ const Timeline = () => {
     const work_term_positions = {
         "WT1": "Finance Project: Financial Investment Coach @ WEA",
         "WT2": "CS136(L) Instructional Support Assistant @ University of Waterloo",
-        "WT3": "Software Developer - Performance Intern @ Ford Canada",
+        "WT3": "Software Developer - Performance Testing @ Ford Canada",
     }
 
     const timelines = {
-        "WT3": "Fall 2024 (Sept 2024 - Present)",
-        "2B": "Spring 2024 (May 2024 - Present)",
+        "WT3": "Fall 2024 (Sep 2024 - Present)",
+        "2B": "Spring 2024 (May 2024 - Aug 2024)",
         "WT2": "Winter 2024 (Jan - Apr 2024)",
         "2A": "Fall 2023 (Sep - Dec 2023)",
         "WT1": "Spring 2023 (May - Aug 2023)",

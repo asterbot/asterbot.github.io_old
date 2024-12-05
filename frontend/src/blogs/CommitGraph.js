@@ -1,6 +1,6 @@
 import React from 'react';
 
-// My own react component for commit graphs
+// HACK: My own react component for commit graphs
 // cuz @react/gitgraph was kinda bad lol
 
 

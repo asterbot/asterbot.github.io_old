@@ -96,6 +96,10 @@
   flex-wrap: wrap;
 }
 
+.image-container{
+  padding-left: 1px;
+}
+
 .text-container, .image-container {
   flex: 1 0 100%;
 }
@@ -110,6 +114,7 @@
   max-width: 10 0%;
   height: 16em;
   object-fit: contain;
+  border-radius: 30%;
 }
 
 /* Not found */
