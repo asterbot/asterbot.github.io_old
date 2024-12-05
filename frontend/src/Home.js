@@ -32,9 +32,9 @@ const Home = () => {
                     <div className="responsive-container">
                     <div className="text-container">
                         Hi there! <br />
-                        Who am I? A work in progress, fueled by code and curiosity. A massive tech nerd, studying CS@UWaterloo. <br />
+                        Who am I? A work in progress, fueled by code and curiosity. A massive tech nerd, currently studying CS@UWaterloo. <br />
                         <br />
-                        This website is going to act as a culmination of my professional portfolio and an outlet for me to talk about things I find cool. Hope you enjoy looking around as much as I did creating this!
+                        This website is going to act as a culmination of my professional portfolio and an outlet for me to talk about things I find cool. Hope you enjoy looking around as much as I did building this!
                         <br /><br />
                         <i>Code, chaos, create!</i>
                     </div>
