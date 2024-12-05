@@ -107,7 +107,7 @@
 }
 
 .responsive {
-  max-width: 100%;
+  max-width: 10 0%;
   height: 16em;
   object-fit: contain;
 }

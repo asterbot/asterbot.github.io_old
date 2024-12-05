@@ -1,5 +1,8 @@
 import React from 'react';
-import Blog from './Blogs/blog_test';
+
+// My own react component for commit graphs
+// cuz @react/gitgraph was kinda bad lol
+
 
 // Reusable CommitLink Component
 const CommitLink = ({ message, url }) => {
@@ -74,15 +77,13 @@ const BranchLine = ({
   />
 );
 
-const GitGraphVisualization = () => {
+const CommitGraph = () => {
   return (
-    <div>
       <div className="git-graph-container">
         <svg 
           viewBox="0 0 400 300" 
           className="git-graph-svg"
         >
-          {/* Main branch vertical line */}
           <BranchLine startX={200} startY={50} endX={200} endY={250} />
           
           {/* Commits */}
@@ -149,10 +150,8 @@ const GitGraphVisualization = () => {
 
         </svg>
       </div>
-      <Blog />
-    </div>
 
   );
 };
 
-export default GitGraphVisualization;
+export default CommitGraph;

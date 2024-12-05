@@ -8,10 +8,10 @@ import projectData from './data/projects.json';
 
 // Until I find a better solution, I will import all the project pages here
 // TODO: try to find a better solution to generalize this - this is too iffy but it works for now
-import Age  from './descriptions/age'
-import Memotion from "./descriptions/memotion";
-import AiEarth from "./descriptions/ai-earth";
-import Music4Mood from "./descriptions/music4mood";
+import Age  from '../descriptions/age'
+import Memotion from "../descriptions/memotion";
+import AiEarth from "../descriptions/ai-earth";
+import Music4Mood from "../descriptions/music4mood";
 
 const id_component_map = {
     "age": <Age />,

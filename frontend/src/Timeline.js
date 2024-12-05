@@ -35,6 +35,7 @@ const Timeline = () => {
     }
 
     const timelines = {
+        "WT3": "Fall 2024 (Sept 2024 - Present)",
         "2B": "Spring 2024 (May 2024 - Present)",
         "WT2": "Winter 2024 (Jan - Apr 2024)",
         "2A": "Fall 2023 (Sep - Dec 2023)",

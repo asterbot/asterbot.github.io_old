@@ -1,9 +1,9 @@
 import Navbar from './Navbar'
 import Home from './Home'
-import Projects from './Projects'
+import Projects from './projects/Projects'
 import NotFound from './NotFound'
-import ProjectDetails from './ProjectDetails';
-import Blogs from './Blogs';
+import ProjectDetails from './projects/ProjectDetails';
+import Blogs from './blogs/Blogs';
 
 import { HashRouter, Route, Routes} from 'react-router-dom';
 import ScrollToTop from "react-scroll-to-top";
