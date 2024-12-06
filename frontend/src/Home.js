@@ -24,23 +24,31 @@ const Home = () => {
             </div>
 
             <div className="box-body">
-                <Box component="section" textAlign="left" sx={{ p: 2, margin: 'auto', width: '80%' }}>
-                    <div className="responsive-container">
-                    <div className="text-container">
-                        Hi there! <br />
-                        Who am I? A work in progress, fueled by code and curiosity. A massive tech nerd, currently studying CS@UWaterloo. <br />
-                        <br />
-                        This website is going to act as a culmination of my professional portfolio and an outlet for me to talk about things I find cool. Hope you enjoy looking around as much as I did building this!
-                        <br /><br />
-                        <i>Code, chaos, create!</i>
-                    </div>
-                    <div className="image-container">
-                        {/* HACK: height is hardcoded, find a better way  */}
-                        <img className="responsive" src={require('./img/website.jpg')} loading="lazy" alt="hi"/>
-                    </div>
-                    </div>
-                </Box> 
+                <table className="intro-table">
+                    <tr>
+                        <td>
+                            <div className="text-container">
+                                Hi there! <br />
+                                Who am I? A work in progress, fueled by code and curiosity.<br/> A massive tech nerd, currently studying CS@UWaterloo. <br />
+                                <br />
+                                This website is going to act as a culmination of my professional portfolio and an outlet for me to talk about things I find cool. Hope you enjoy looking around as much as I did building this!
+                                <br /><br />
+                                <i>Code, chaos, create!</i>
+                            </div>
+                        </td>
+                        <td>
+                            <div className="gear-image">
+                                <div className="image-container">
+                                    {/* HACK: height is hardcoded, find a better way  */}
+                                    <img className="responsive" src={require('./img/website.jpg')} loading="lazy" alt="hi"/>
+                                    <img className="gear" src={require('./img/gear.gif')} loading="lazy" alt="gear"/>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
                 </div>
+                
 
             <br />
             <hr />
