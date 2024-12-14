@@ -31,7 +31,8 @@ const Home = () => {
                                 Hi there! <br />
                                 Who am I? A work in progress, fueled by code and curiosity.<br/> A massive tech nerd, currently studying CS@UWaterloo. <br />
                                 <br />
-                                This website is going to act as a culmination of my professional portfolio and an outlet for me to talk about things I find cool. Hope you enjoy looking around as much as I did building this!
+                                This website is going to act as a culmination of my professional portfolio and an outlet for me to talk about things I find cool. 
+                                Hope you enjoy looking around!
                                 <br /><br />
                                 <i>Code, chaos, create!</i>
                             </div>
@@ -41,7 +42,8 @@ const Home = () => {
                                 <div className="image-container">
                                     {/* HACK: height is hardcoded, find a better way  */}
                                     <img className="responsive" src={require('./img/website.jpg')} loading="lazy" alt="hi"/>
-                                    <img className="gear" src={require('./img/gear.gif')} loading="lazy" alt="gear"/>
+                                    {/* TODO: Get the gear working, plz it is cool */}
+                                    {/* <img className="gear" src={require('./img/gear.gif')} loading="lazy" alt="gear"/> */}
                                 </div>
                             </div>
                         </td>
