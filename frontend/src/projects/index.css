@@ -1,0 +1,99 @@
+/* Project page styles */
+.custom-overlay__caption {
+    background-color: rgba(0, 0, 0, 0);
+    max-height: 240px;
+    overflow: hidden;
+    position: absolute;
+    bottom: 50%;
+    width: 100%;
+    color: white;
+    font-size: 150%;
+    z-index: 1;
+  }
+  
+  /* To overwrite the background colors they were inheriting unfortunately */
+  .ReactGridGallery_custom-overlay {
+    background-color: transparent;
+    backdrop-filter: blur(1px); 
+  }
+  
+  .ReactGridGallery_tile-icon-bar{
+    background-color: transparent;
+  }
+  .ReactGridGallery_tile-bottom-bar{
+    background-color: transparent;
+  }
+  
+  .ReactGridGallery_tile-description{
+    background-color: #0e0f0f !important;
+    padding-top: 10px !important;
+    color: white;
+  }
+  
+  
+  /* Project details */
+  
+  .slideshow-img{
+    width:40%;
+  }
+  
+  .react-slideshow-container .nav:first-of-type{
+    left: 28% !important;
+  }
+  
+  .react-slideshow-container .nav:last-of-type{
+    right:28% !important;
+  }
+  
+  svg{
+    background-color: transparent;
+  }
+  
+  .react-slideshow-container .default-nav{
+    background: #dc3545 !important;
+    border-radius: 25% !important;
+  }
+  
+  .tools-and-stuff {
+    list-style: none;
+    display: inline-block;
+  }
+  
+  .tools-and-stuff li {
+    text-align: left;
+    display: inline-block;
+  }
+  
+  .tools-and-stuff li:before {
+    content: '✓';
+    margin-right: 5px; 
+    margin-left: 20px;
+  }
+  
+  .project-description{
+    margin-left: 27%;
+    margin-right: 27%;
+    text-align: left;
+  }
+  
+  .project-description a{
+    color: #c54282;
+  }
+  
+  .normal-list {
+    list-style: none;
+    display: inline-block;
+  }
+  
+  .normal-list li {
+    text-align: left;
+  }
+  
+  .normal-list li:before {
+    content: '•';
+  }
+  
+  
+  .tag{
+    display: inline
+  }

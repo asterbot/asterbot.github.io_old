@@ -2,12 +2,13 @@ import { useParams } from "react-router-dom";
 import { Box } from "@mui/material";
 import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css'
+import './index.css';
 
 
 import projectData from './data/projects.json';
 
 // Until I find a better solution, I will import all the project pages here
-// TODO: try to find a better solution to generalize this - this is too iffy but it works for now
+// TODO: try to find a better solution to generalize this - this is too iffy but it works for now 
 import Age  from './descriptions/age'
 import Memotion from "./descriptions/memotion";
 import AiEarth from "./descriptions/ai-earth";

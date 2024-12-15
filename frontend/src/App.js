@@ -1,8 +1,10 @@
 import Navbar from './Navbar'
 import Home from './Home'
-import Projects from './Projects'
+import Projects from './projects/Projects'
 import NotFound from './NotFound'
-import ProjectDetails from './ProjectDetails';
+import ProjectDetails from './projects/ProjectDetails';
+import Blogs from './blogs/Blogs';
+import Blog from './blogs/blog';
 
 import { HashRouter, Route, Routes} from 'react-router-dom';
 import ScrollToTop from "react-scroll-to-top";
@@ -18,6 +20,8 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/projects/:id" element={<ProjectDetails />} />
+            <Route path="/blogs" element={<Blogs/>} />
+            <Route path="/blogs/:id" element={<Blog />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
 

@@ -4,8 +4,6 @@ import { Box } from '@mui/material';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import EmailIcon from '@mui/icons-material/Email';
-import DoubleArrowIcon from '@mui/icons-material/DoubleArrow';
-
 
 // Timeline components
 import Timeline from './Timeline';
@@ -22,27 +20,37 @@ const Home = () => {
                     <a href="https://www.linkedin.com/in/arjun-sodhi/" target="_blank" rel="noreferrer"> <LinkedInIcon /> </a>
                     <a href="mailto:as5sodhi@uwaterloo.ca"><EmailIcon /></a>
                     <br /><br />
-                    <a href="#/projects">Check out my Projects <DoubleArrowIcon /></a>
-
                 </Box> 
             </div>
 
             <div className="box-body">
-                <Box component="section" textAlign="left" sx={{ p: 2, border: '2px solid grey', margin: 'auto', width: '80%' }}>
-                    <div className="responsive-container">
-                    <div className="text-container">
-                        <p>Hi there! <br />I'm Arjun, and I'm an undergraduate student pursuing a Bachelor's of Computer Science at the <a href="https://uwaterloo.ca" target="_blank" rel="noreferrer">University of Waterloo</a>. <br /> <br />
-                        I am doing a specialization in Artificial Intelligence(AI) as well as a minor in Combinatorics and Optimization (C&O).   <br /> <br />
-                        <i>Live, Learn, Code!</i>
-                        </p>
-                    </div>
-                    <div className="image-container">
-                        {/* NOTE: height is hardcoded, find a better way  */}
-                        <img className="responsive" src={require('./img/website.jpg')} alt="hi"/>
-                    </div>
-                    </div>
-                </Box> 
+                <table className="intro-table">
+                    <tr>
+                        <td>
+                            <div className="text-container">
+                                Hi there! <br />
+                                Who am I? A work in progress, fueled by code and curiosity.<br/> A massive tech nerd, currently studying CS@UWaterloo. <br />
+                                <br />
+                                This website is going to act as a culmination of my professional portfolio and an outlet for me to talk about things I find cool. 
+                                Hope you enjoy looking around!
+                                <br /><br />
+                                <i>Code, chaos, create!</i>
+                            </div>
+                        </td>
+                        <td>
+                            <div className="gear-image">
+                                <div className="image-container">
+                                    {/* HACK: height is hardcoded, find a better way  */}
+                                    <img className="responsive" src={require('./img/website.jpg')} loading="lazy" alt="hi"/>
+                                    {/* TODO: Get the gear working, plz it is cool */}
+                                    {/* <img className="gear" src={require('./img/gear.gif')} loading="lazy" alt="gear"/> */}
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
                 </div>
+                
 
             <br />
             <hr />

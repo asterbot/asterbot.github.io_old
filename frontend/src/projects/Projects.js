@@ -4,6 +4,8 @@ import { useNavigate } from 'react-router-dom';
 
 import projectData from './data/projects.json';
 
+import './index.css';
+
 const Projects = () => {
 
     const navigate = useNavigate();
