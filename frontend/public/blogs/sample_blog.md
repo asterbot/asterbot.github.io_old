@@ -14,3 +14,20 @@ if x>5:
 ~~~
 
 $x^2+y^2$
+
+- point 1
+- point 2
+
+
+```cpp
+#include <iostream>
+
+int main(){
+    cout<<"henlo\n";
+}
+```
+
+output:
+```txt
+henlo
+```

@@ -30,9 +30,10 @@ const Blog = () => {
     }, [FILE_PATH])
 
     return (
-    <div style={{ maxWidth: '600px', margin: '0 auto', padding: '10px'}}>
+    <div style={{ maxWidth: '700px', margin: '0 auto', padding: '10px'}}>
         <ReactMarkdown
         children={markdown}
+        className="markdown-content"
         remarkPlugins={[remarkGfm, remarkMath]}
         rehypePlugins={[rehypeKatex, rehypeRaw]}
 

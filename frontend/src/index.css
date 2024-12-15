@@ -312,3 +312,23 @@ svg{
   box-shadow: none !important;
   border: none !important;
 }
+
+/* Markdown settings */
+
+blockquote{
+  border-left: 3px solid white;
+  opacity: 0.6;
+  padding-left: 5px;
+}
+
+.markdown-content {
+  text-align: left !important;  /* Ensure text is left-aligned */
+}
+
+.markdown-content p, 
+.markdown-content h2, 
+.markdown-content h3, 
+.markdown-content li, 
+.markdown-content code {
+  text-align: left !important;
+}
