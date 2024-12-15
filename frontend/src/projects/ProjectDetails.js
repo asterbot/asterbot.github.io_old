@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom";
 import { Box } from "@mui/material";
 import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css'
+import './index.css';
 
 
 import projectData from './data/projects.json';

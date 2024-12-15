@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import './index.css'
 
 // HACK: My own react component (kind of) for commit graphs
 // cuz @react/gitgraph was kinda bad lol
