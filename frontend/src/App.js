@@ -1,3 +1,6 @@
+import { HashRouter, Route, Routes} from 'react-router-dom';
+import ScrollToTop from "react-scroll-to-top";
+
 import Navbar from './Navbar'
 import Home from './Home'
 import Projects from './projects/Projects'
@@ -5,9 +8,6 @@ import NotFound from './NotFound'
 import ProjectDetails from './projects/ProjectDetails';
 import Blogs from './blogs/Blogs';
 import Blog from './blogs/blog';
-
-import { HashRouter, Route, Routes} from 'react-router-dom';
-import ScrollToTop from "react-scroll-to-top";
 
 function App() {
   return (

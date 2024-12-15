@@ -1,13 +1,16 @@
 import ReactMarkdown from 'react-markdown'
+import { useEffect, useState } from 'react'
+import { useParams } from 'react-router-dom'
+
 import {Prism as SyntaxHighlighter} from 'react-syntax-highlighter'
 import {dracula} from 'react-syntax-highlighter/dist/esm/styles/prism'
+
 import remarkGfm from 'remark-gfm'
 import remarkMath from 'remark-math'
 import rehypeKatex from 'rehype-katex'
 import rehypeRaw from "rehype-raw";
+
 import 'katex/dist/katex.min.css' // `rehype-katex` does not import the CSS for you
-import { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom'
 
 
 // for border:  border: '1px solid #ccc', borderRadius: '8px'
