@@ -60,3 +60,7 @@
     text-align: left !important;
   }
   
+
+  g:hover{
+    color: green
+  }
