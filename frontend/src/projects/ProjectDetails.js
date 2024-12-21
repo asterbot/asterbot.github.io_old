@@ -4,8 +4,9 @@ import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css'
 import './index.css';
 
-import { projectData } from "./projectData";
+import projectData  from "./data/projectsData.json";
 
+import * as Components from "./descriptions/index"
 
 const ProjectDetails = () => {
 
@@ -29,6 +30,8 @@ const ProjectDetails = () => {
 
         slideImages.push(temp);
     }
+
+    const Details = Components[data["component"]]
 
     return ( 
         <div className="project-details">
@@ -73,8 +76,7 @@ const ProjectDetails = () => {
                     <h3><span>Description</span></h3>
                 </Box>
 
-                {/* Render the component */}
-                {data["component"]}
+                <Details />
                 
             </div>
         </div>
