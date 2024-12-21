@@ -1,8 +1,7 @@
 import { Box } from '@mui/material';
 import { Gallery } from "react-grid-gallery";
 import { useNavigate } from 'react-router-dom';
-
-import projectData from './data/projects.json';
+import { projectData } from './projectData';
 
 import './index.css';
 
