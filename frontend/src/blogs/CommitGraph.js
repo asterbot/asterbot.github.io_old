@@ -15,20 +15,25 @@ const handleClick = (commitString, navigate) => {
   navigate(urlLink);
 }
 
-const addCommit = (branch, commitString, navigate) => {
+const useAddCommit = () => {
   // This is a wrapper for the original commit function, to ensure that the correct properties are applied
+  const navigate = useNavigate()
+
+  return (branch, commitString) =>{
   branch.commit({
     subject: commitString,
     renderMessage: (commit) => {
       return (
         <text className="commit-message"
-              onClick={()=>handleClick(commitString,navigate)}      
+              onClick={()=>handleClick(commitString,navigate)}
+              y={20}
         >
           {commit.subject}
         </text>
-      )
-    },
-  });
+        )
+      },
+    });
+  }
 }
 
 let options = {
@@ -45,20 +50,21 @@ let options = {
 };
 
 const CommitGraph = () => {
-  const navigate = useNavigate()
+  const addCommit = useAddCommit()
   return (
     <div className="commit-graph-container">
       <Gitgraph options={options}>
         {(gitgraph) => {
           const main = gitgraph.branch("main");
-          addCommit(main, "Sample Blog", navigate);
+          addCommit(main, "Initial Commit");
 
-          const cool_stuff = gitgraph.branch("Cool Stuff");
-          addCommit(cool_stuff, "First heere", navigate);
+          const cool_stuff = gitgraph.branch("Projects");
+          addCommit(cool_stuff, "Sleep sort");
 
-          addCommit(main, "New Blog", navigate);
-          
-          addCommit(cool_stuff, "Second here", navigate);
+          addCommit(main,"New commit!")
+
+          addCommit(cool_stuff,"Hi!")
+
         }}
       </Gitgraph>
     </div>

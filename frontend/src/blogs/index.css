@@ -65,6 +65,7 @@
     fill: white !important;
     cursor: pointer;
     transition: color 0.2s ease;
+    padding: 2px;
   }
 
   .commit-message:hover{
