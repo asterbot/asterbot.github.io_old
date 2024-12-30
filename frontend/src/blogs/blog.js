@@ -16,7 +16,6 @@ import 'katex/dist/katex.min.css' // `rehype-katex` does not import the CSS for 
 
 // for border:  border: '1px solid #ccc', borderRadius: '8px'
 
-
 const Blog = () => {
 
     const { id } = useParams(); // get id from URL
@@ -87,14 +86,6 @@ const Blog = () => {
                                 {children}
                             </code>
                         )
-                    },
-                    math: ({children}) => {
-                        console.log("Math content:", children);
-                        return <span>{children}</span>;
-                    },
-                    inlineMath: ({children}) => {
-                    console.log("Inline Math content:", children);
-                    return <span>{children}</span>;
                     }
                 }}
             />

@@ -16,7 +16,7 @@ const handleClick = (commitString, navigate) => {
 }
 
 const useAddCommit = () => {
-  // This is a wrapper for the original commit function, to ensure that the correct properties are applied
+  // This hook is a wrapper for the original commit function, to ensure that the correct properties are applied
   const navigate = useNavigate()
 
   return (branch, commitString) =>{
@@ -57,14 +57,6 @@ const CommitGraph = () => {
         {(gitgraph) => {
           const main = gitgraph.branch("main");
           addCommit(main, "Initial Commit");
-
-          const cool_stuff = gitgraph.branch("Projects");
-          addCommit(cool_stuff, "Sleep sort");
-
-          addCommit(main,"New commit!")
-
-          addCommit(cool_stuff,"Hi!")
-
         }}
       </Gitgraph>
     </div>
