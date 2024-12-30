@@ -1,10 +1,8 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import './index.css'
-
 import { Gitgraph,  templateExtend } from '@gitgraph/react';
 
-// const { Gitgraph } = require("@gitgraph/react");
+import './index.css'
 
 const processString = (commitString) => {
   // Convert string like "Initial Commit" to "initial_commit"
@@ -18,11 +16,19 @@ const handleClick = (commitString, navigate) => {
 }
 
 const addCommit = (branch, commitString, navigate) => {
+  // This is a wrapper for the original commit function, to ensure that the correct properties are applied
   branch.commit({
     subject: commitString,
-    onMessageClick: () => handleClick(commitString, navigate),
-    onMouseOut: () => {console.log("HI!")},
-  })
+    renderMessage: (commit) => {
+      return (
+        <text className="commit-message"
+              onClick={()=>handleClick(commitString,navigate)}      
+        >
+          {commit.subject}
+        </text>
+      )
+    },
+  });
 }
 
 let options = {
@@ -32,6 +38,7 @@ let options = {
       message: {
         displayAuthor: false,
         displayHash: false,
+        display: true,
       },
     },
   }),
@@ -40,21 +47,21 @@ let options = {
 const CommitGraph = () => {
   const navigate = useNavigate()
   return (
-        <Gitgraph options={options}>
-          {(gitgraph) => {
-            // Simulate git commands with Gitgraph API.
-            const main = gitgraph.branch("main");
-            addCommit(main, "Sample Blog", navigate);
+    <div className="commit-graph-container">
+      <Gitgraph options={options}>
+        {(gitgraph) => {
+          const main = gitgraph.branch("main");
+          addCommit(main, "Sample Blog", navigate);
 
-            const cool_stuff = gitgraph.branch("Cool Stuff")
-            addCommit(cool_stuff, "First heere", navigate)
+          const cool_stuff = gitgraph.branch("Cool Stuff");
+          addCommit(cool_stuff, "First heere", navigate);
 
-            addCommit(main, "New Blog", navigate)
-            
-            addCommit(cool_stuff, "Second here", navigate)
-
-          }}
-        </Gitgraph>
+          addCommit(main, "New Blog", navigate);
+          
+          addCommit(cool_stuff, "Second here", navigate);
+        }}
+      </Gitgraph>
+    </div>
       );
 };
 

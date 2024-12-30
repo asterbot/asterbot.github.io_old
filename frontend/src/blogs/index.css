@@ -61,6 +61,12 @@
   }
   
 
-  g:hover{
-    color: green
+  .commit-message {
+    fill: white !important;
+    cursor: pointer;
+    transition: color 0.2s ease;
+  }
+
+  .commit-message:hover{
+    opacity: 0.6;
   }
