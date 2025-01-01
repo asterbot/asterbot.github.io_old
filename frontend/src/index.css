@@ -115,6 +115,12 @@
   margin: auto;
 } 
 
+@media screen and (max-width: 1400px) {
+  .intro-table {
+    width: 100%;
+  }
+}
+
 .gear-image {
   position: relative;
   width: 300px; /* Set the desired width */

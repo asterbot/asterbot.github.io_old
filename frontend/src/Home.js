@@ -25,6 +25,7 @@ const Home = () => {
 
             <div className="box-body">
                 <table className="intro-table">
+                <tbody>
                     <tr>
                         <td>
                             <div className="text-container">
@@ -48,6 +49,7 @@ const Home = () => {
                             </div>
                         </td>
                     </tr>
+                </tbody>
                 </table>
                 </div>
                 
