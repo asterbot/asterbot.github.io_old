@@ -70,6 +70,24 @@
   background-color: #03e9f4;
   box-shadow: 0 0 20px #03e9f4; 
 }
+
+.icons{
+  /* width: 1em;
+  height: 1em; */
+  font-size: 30px;
+  display: inline-block;
+  transition: all 0.3s ease;
+  margin-top: 10px; 
+  cursor: pointer;   
+}
+
+.icons:hover{
+   /* width: 1.1em;
+  height: 1.1em; */
+  font-size: 35px;
+  margin: 0px;
+} 
+
 .box-body{
   margin-top: 10px;
   width: 80%;

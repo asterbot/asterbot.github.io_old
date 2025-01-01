@@ -1,9 +1,9 @@
 import { Box } from '@mui/material';
 
 // Icons used in this page
-import GitHubIcon from '@mui/icons-material/GitHub';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import EmailIcon from '@mui/icons-material/Email';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faGithub, faItchIo, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 // Timeline components
 import Timeline from './Timeline';
@@ -16,9 +16,11 @@ const Home = () => {
             <div className="box-header">
                 <Box component="section" alignItems="center" justifyContent="center" sx={{ margin: 'auto', p: 2, width:'50%' }}>
                     <h2><span>About me</span> </h2> <br /> 
-                    Contact me: <a href="https://github.com/asterbot" target="_blank" rel="noreferrer"><GitHubIcon /> </a>
-                    <a href="https://www.linkedin.com/in/arjun-sodhi/" target="_blank" rel="noreferrer"> <LinkedInIcon /> </a>
-                    <a href="mailto:as5sodhi@uwaterloo.ca"><EmailIcon /></a>
+                    Socials: <br/> 
+                    <a href="https://github.com/asterbot" target="_blank" rel="noreferrer"><FontAwesomeIcon className="icons" icon={faGithub} size="2x" /> </a>
+                    <a href="https://www.linkedin.com/in/arjun-sodhi/" target="_blank" rel="noreferrer"> <FontAwesomeIcon className="icons" icon={faLinkedin} size="2x" /> </a>
+                    <a href="https://asterbot.itch.io/" target="_blank" rel="noreferrer"> <FontAwesomeIcon className="icons" icon={faItchIo} size="2x" /> </a>
+                    <a href="mailto:as5sodhi@uwaterloo.ca" target="_blank" rel="noreferrer"> <FontAwesomeIcon className="icons" icon={faEnvelope} size="2x" /> </a>
                     <br /><br />
                 </Box> 
             </div>
