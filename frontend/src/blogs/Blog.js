@@ -20,8 +20,8 @@ const Blog = () => {
 
     const { id } = useParams(); // get id from URL
 
-    const FILE_PATH = "./blogs/" + id + ".md" // get the correct md file from public directory
     const [markdown, setMarkdown] = useState("")
+    const FILE_PATH = "./blogs/" + id + ".md" // get the correct md file from public directory
 
     useEffect(()=>{
         fetch(FILE_PATH)
@@ -53,17 +53,7 @@ const Blog = () => {
                 children={markdown}
                 className="markdown-content"
                 remarkPlugins={[remarkGfm, remarkMath]}
-                rehypePlugins={[
-                    [rehypeKatex, {
-                    throwOnError: false,  // This will help catch KaTeX rendering errors
-                    // errorColor: '#cc0000',
-                    output: "html",
-                    macros: {
-                        "\\dfrac": "\\frac"  // Fallback macro
-                    }
-                    }], 
-                    rehypeRaw
-                ]}
+                rehypePlugins={[rehypeKatex, rehypeRaw]}
 
                 components={{
                     code({node, inline, className, children, ...props}) {
@@ -71,7 +61,7 @@ const Blog = () => {
                         return !inline && match ? (
                             <SyntaxHighlighter
                                 children={String(children).replace(/\n$/, '')}
-                                style={dracula}
+                                style={dracula} 
                                 language={match[1]}
                                 PreTag="div"
                                 customStyle={{
@@ -86,7 +76,7 @@ const Blog = () => {
                                 {children}
                             </code>
                         )
-                    }
+                    },
                 }}
             />
         </div>
@@ -95,3 +85,4 @@ const Blog = () => {
   };
   
   export default Blog;
+  

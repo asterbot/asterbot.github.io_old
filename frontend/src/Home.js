@@ -29,7 +29,7 @@ const Home = () => {
                         <td>
                             <div className="text-container">
                                 Hi there! <br />
-                                Who am I? A work in progress, fueled by code and curiosity.<br/> A massive tech nerd, currently studying CS@UWaterloo.<br />
+                                Who am I? A work in progress, fueled by code and curiosity.<br/> A massive tech nerd, currently studying CS@UWaterloo, in the class of 2027!<br />
                                 <br />
                                 This website will be a culmination of my professional portfolio and an outlet for me to talk about things I find cool. 
                                 Hope you enjoy looking around!

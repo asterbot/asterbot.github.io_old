@@ -5,75 +5,59 @@
     justify-content: center;
     padding: 2rem;
   }
-  
-  .git-graph-svg {
-    width: 100%;
-    max-width: 42rem;
-  }
-  
-  .commit-link {
-    color: white;
-    text-decoration: underline;
-    cursor: pointer;
-    transition: color 0.2s ease;
-  }
-  
-  .commit-link:hover {
-    color: #e0e0e0;  /* lighter white for hover effect */
-  }
-  
-  .commit-text {
-    font-size: 0.875rem;  /* text-sm equivalent */
-  }
-  
-  /* Override the styles for the code block */
-  .react-syntax-highlighter {
-    background: transparent !important;
-    padding: 0 !important;  /* Reset padding */
-    margin: 0 !important;   /* Reset margin */
-  }
-  
-  /* Neutralize the line highlighting (if applicable) */
-  .react-syntax-highlighter .line-highlight {
-    background: transparent !important;
-    box-shadow: none !important;
-    border: none !important;
-  }
-  
-  /* Markdown settings */
-  
-  blockquote{
-    border-left: 3px solid white;
-    opacity: 0.6;
-    padding-left: 10px;
-  }
-  
-  .markdown-content {
-    text-align: left !important;  /* Ensure text is left-aligned */
-  }
-  
-  .markdown-content p, 
-  .markdown-content h2, 
-  .markdown-content h3, 
-  .markdown-content li, 
-  .markdown-content code {
-    text-align: left !important;
-  }
-  
 
-  .commit-message {
-    fill: white !important;
-    cursor: pointer;
-    transition: color 0.2s ease;
-    padding: 2px;
-  }
+.commit-message {
+  fill: white !important;
+  cursor: pointer;
+  transition: color 0.2s ease;
+  padding: 2px;
+}
 
-  .commit-message:hover{
-    opacity: 0.6;
-  }
+.commit-message:hover{
+  opacity: 0.6;
+}
+  
+/* Override the styles for the code block */
+.react-syntax-highlighter {
+  background: transparent !important;
+  padding: 0 !important;  /* Reset padding */
+  margin: 0 !important;   /* Reset margin */
+}
+
+/* Neutralize the line highlighting (if applicable) */
+.react-syntax-highlighter .line-highlight {
+  background: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+/* Markdown settings */
+
+blockquote{
+  border-left: 3px solid white;
+  opacity: 0.6;
+  padding-left: 10px;
+}
+
+.markdown-content {
+  text-align: left !important;  /* Ensure text is left-aligned */
+}
+
+.markdown-content p, 
+.markdown-content h2, 
+.markdown-content h3, 
+.markdown-content li, 
+.markdown-content code {
+  text-align: left !important;
+}
+
 
 /* Markdown content */
-  .markdown-content h2{
-    margin-top: 20px;
-    border-bottom:1px solid grey ;
-  }
+.markdown-content h2{
+  margin-top: 20px;
+  border-bottom:1px solid grey ;
+}
+
+.katex .vlist{
+  position: absolute !important;
+}

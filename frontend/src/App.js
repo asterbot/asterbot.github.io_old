@@ -7,7 +7,7 @@ import Projects from './projects/Projects'
 import NotFound from './NotFound'
 import ProjectDetails from './projects/ProjectDetails';
 import Blogs from './blogs/Blogs';
-import Blog from './blogs/blog';
+import Blog from './blogs/Blog';
 
 function App() {
   return (

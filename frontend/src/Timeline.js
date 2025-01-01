@@ -29,7 +29,7 @@ const Timeline = () => {
     }
 
     const work_term_positions = {
-        "WT1": "Finance Project: Financial Investment Coach @ WEA",
+        "WT1": "Azure Project Developer @ University of Waterloo (WEA)",
         "WT2": "CS136(L) Instructional Support Assistant @ University of Waterloo",
         "WT3": "Software Developer - Performance Intern @ Ford Canada",
     }
@@ -37,11 +37,11 @@ const Timeline = () => {
     const timelines = {
         "WT3": "Fall 2024 (Sep 2024 - Dec 2024)",
         "2B": "Spring 2024 (May 2024 - Aug 2024)",
-        "WT2": "Winter 2024 (Jan - Apr 2024)",
-        "2A": "Fall 2023 (Sep - Dec 2023)",
-        "WT1": "Spring 2023 (May - Aug 2023)",
-        "1B": "Winter 2023 (Jan - Apr 2023)",
-        "1A": "Fall 2022 (Sept - Dec 2022)"    
+        "WT2": "Winter 2024 (Jan 2024 - Apr 2024)",
+        "2A": "Fall 2023 (Sep 2023 - Dec 2023)",
+        "WT1": "Spring 2023 (May 2023 - Aug 2023)",
+        "1B": "Winter 2023 (Jan 2023 - Apr 2023)",
+        "1A": "Fall 2022 (Sept 2022 - Dec 2022)"    
     }
 
     return ( 
