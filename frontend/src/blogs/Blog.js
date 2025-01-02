@@ -16,6 +16,16 @@ import 'katex/dist/katex.min.css' // `rehype-katex` does not import the CSS for 
 
 // for border:  border: '1px solid #ccc', borderRadius: '8px'
 
+const modifyImagePaths = (markdown) => {
+    // Prefixes all image strings with './blogs/
+    const regex = /[a-zA-Z0-9_/]*\.png/g
+    const ouptutString = markdown.replace(regex, (match) => {
+        return `./blogs/${match}`
+    })
+    console.log(ouptutString)
+    return ouptutString
+}
+
 const Blog = () => {
 
     const { id } = useParams(); // get id from URL
@@ -50,7 +60,7 @@ const Blog = () => {
             </div>
         <div style={{ maxWidth: '700px', margin: '0 auto', padding: '10px'}}>
             <ReactMarkdown
-                children={markdown}
+                children={modifyImagePaths(markdown)}
                 className="markdown-content"
                 remarkPlugins={[remarkGfm, remarkMath]}
                 rehypePlugins={[rehypeKatex, rehypeRaw]}

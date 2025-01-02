@@ -27,15 +27,15 @@ Honestly, anything I want to talk about. Some potential topic categories include
 Or anything else I decide to blog about :D but it will probably be one of these
 
 
-## The blog framework
-### JS :'D
+## The blog framework design
+### JS :')
 As said by a famous philosopher:
 > "*JS Developers: Why write 10 lines of code when theres a library to do it in 100?*" \
 > ~ ChatGPT, when asked to roast JS devs
 
 Unfortunately this website is built with React *JavaScript* (I'll shift to TypeScript at some point, I'm in too deep rn), and this language really knows how to be, hmm, interesting. \
 \
-![](./blogs/images/image.png)
+![](images/image.png)
 > Such intuitive much wow
 
 <br/>

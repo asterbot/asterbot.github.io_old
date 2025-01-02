@@ -16,11 +16,10 @@ const Home = () => {
             <div className="box-header">
                 <Box component="section" alignItems="center" justifyContent="center" sx={{ margin: 'auto', p: 2, width:'50%' }}>
                     <h2><span>About me</span> </h2> <br /> 
-                    Socials: <br/> 
+                    Find me on: <br/> 
                     <a href="https://github.com/asterbot" target="_blank" rel="noreferrer"><FontAwesomeIcon className="icons" icon={faGithub} size="2x" /> </a>
                     <a href="https://www.linkedin.com/in/arjun-sodhi/" target="_blank" rel="noreferrer"> <FontAwesomeIcon className="icons" icon={faLinkedin} size="2x" /> </a>
                     <a href="https://asterbot.itch.io/" target="_blank" rel="noreferrer"> <FontAwesomeIcon className="icons" icon={faItchIo} size="2x" /> </a>
-                    <a href="mailto:as5sodhi@uwaterloo.ca" target="_blank" rel="noreferrer"> <FontAwesomeIcon className="icons" icon={faEnvelope} size="2x" /> </a>
                     <br /><br />
                 </Box> 
             </div>
