@@ -2,7 +2,6 @@ import { Box } from '@mui/material';
 
 // Icons used in this page
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faItchIo, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 // Timeline components

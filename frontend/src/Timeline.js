@@ -19,6 +19,7 @@ const Timeline = () => {
 
     // Update all of these as you keep going
     const courses = {
+        "3A": ["CS 341: Algorithms", "CS 350: Operating Systems", "CS 346: App Development" ,"CS 370: Numerical Computation", "CS 492: Social Implications of Computing"],
         "WT3": [],
         "2B": ["CS 241: Foundations of Sequential Programs", "CS 240: Data Structures and Data Management", "MATH 235: Linear Algebra II", "PHYS 234: Quantum Physics I", "FR 151: Basic French I", "ENGL 210E: Genres of Technical Communication"],
         "WT2": ["STAT 231: Statistics"],
@@ -31,10 +32,11 @@ const Timeline = () => {
     const work_term_positions = {
         "WT1": "Azure Project Developer @ University of Waterloo (WEA)",
         "WT2": "CS136(L) Instructional Support Assistant @ University of Waterloo",
-        "WT3": "Software Developer - Performance Intern @ Ford Canada",
+        "WT3": "Software Developer - Performance Team @ Ford Motors",
     }
 
     const timelines = {
+        "3A": "Winter 2025 (Jan 2025 - Present)",
         "WT3": "Fall 2024 (Sep 2024 - Dec 2024)",
         "2B": "Spring 2024 (May 2024 - Aug 2024)",
         "WT2": "Winter 2024 (Jan 2024 - Apr 2024)",
@@ -60,12 +62,12 @@ const Timeline = () => {
                 {/* This needed to be hard-coded with slicing but will work in the general sense */}
                 <h3 className="vertical-timeline-element-title">{term.slice(0,2)==="WT" ? "Work Term " + term[2] :  term}</h3>
                 <p className="vertical-timeline-element-subtitle">{term.slice(0,2)==="WT" ? work_term_positions[term] :  "Study Term"}</p>
-                <br />
-                Courses:
+                {courses[term].length!==0 ? <br />: ""}
+                {courses[term].length!==0 ? "Courses:" : ""}
                 <ul className="list-group">
                 {courses[term].map((course)=>{
                     let res = "list-group-item list-group-item-warning";
-                    if (course.split(" ")[0]==="CS" || course.split(" ")[0]==="CO"){
+                    if ((course.split(" ")[0]==="CS" && course.split(" ")[1]!=="492:") || course.split(" ")[0]==="CO"){
                         res="list-group-item list-group-item-" + color_map[course.split(" ")[0]];
                     }
                     else if (course.split(" ")[0]==="MATH" || course.split(" ")[0]==="PHYS" || course.split(" ")[0]==="STAT"){
