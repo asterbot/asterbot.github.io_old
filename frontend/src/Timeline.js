@@ -19,7 +19,7 @@ const Timeline = () => {
 
     // Update all of these as you keep going
     const courses = {
-        "3A": ["CS 341: Algorithms", "CS 350: Operating Systems", "CS 346: App Development" ,"CS 370: Numerical Computation"],
+        "3A": ["CS 341: Algorithms", "CS 350: Operating Systems", "CS 346: App Development" ,"CS 370: Numerical Computation", "MUSIC 290: Introduction to Video Game Music", "FR 152: Basic French II"],
         "WT3": [],
         "2B": ["CS 241: Foundations of Sequential Programs", "CS 240: Data Structures and Data Management", "MATH 235: Linear Algebra II", "PHYS 234: Quantum Physics I", "FR 151: Basic French I", "ENGL 210E: Genres of Technical Communication"],
         "WT2": ["STAT 231: Statistics"],
