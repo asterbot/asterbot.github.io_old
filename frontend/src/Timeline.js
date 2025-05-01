@@ -1,3 +1,5 @@
+import { Box } from '@mui/material';
+
 // Timeline components
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
@@ -19,7 +21,8 @@ const Timeline = () => {
 
     // Update all of these as you keep going
     const courses = {
-        "3A": ["CS 341: Algorithms", "CS 350: Operating Systems", "CS 346: App Development" ,"CS 370: Numerical Computation", "MUSIC 290: Introduction to Video Game Music", "FR 152: Basic French II"],
+        "WT4": ["CS 348: Introduction to Database Systems"],
+        "3A": ["CS 341: Algorithms", "CS 350: Operating Systems", "CS 346: App Development" ,"CS 370: Numerical Computation", "MUSIC 290: Video Game Music", "FR 152: Basic French II"],
         "WT3": [],
         "2B": ["CS 241: Foundations of Sequential Programs", "CS 240: Data Structures and Data Management", "MATH 235: Linear Algebra II", "PHYS 234: Quantum Physics I", "FR 151: Basic French I", "ENGL 210E: Genres of Technical Communication"],
         "WT2": ["STAT 231: Statistics"],
@@ -33,10 +36,12 @@ const Timeline = () => {
         "WT1": "Azure Project Developer @ University of Waterloo (WEA)",
         "WT2": "CS136(L) Instructional Support Assistant @ University of Waterloo",
         "WT3": "Software Developer - Performance Team @ Ford Motors",
+        "WT4": "Software Security @ Ford Motors"
     }
 
     const timelines = {
-        "3A": "Winter 2025 (Jan 2025 - Present)",
+        "WT4": "Spring 2025 (May 2025 - Aug 2025)",
+        "3A": "Winter 2025 (Jan 2025 - April 2025)",
         "WT3": "Fall 2024 (Sep 2024 - Dec 2024)",
         "2B": "Spring 2024 (May 2024 - Aug 2024)",
         "WT2": "Winter 2024 (Jan 2024 - Apr 2024)",
@@ -48,6 +53,11 @@ const Timeline = () => {
 
     return ( 
         <div className="timeline">
+            <div className="box-header">
+                <Box component="section" alignItems="center" justifyContent="center" sx={{ margin: 'auto', p: 2, width:'50%' }}>
+                <h2><span>My Journey</span></h2> <br /> 
+                </Box> 
+            </div>
             <VerticalTimeline lineColor='white'>
             {Object.entries(courses).map(([term,temp])=>{
                 // go through the terms

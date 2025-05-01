@@ -5,10 +5,15 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faItchIo, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 // Timeline components
-import Timeline from './Timeline';
+// import Timeline from './Timeline';
+import { useNavigate } from 'react-router-dom';
 
+import { Slide } from 'react-slideshow-image';
 
 const Home = () => {
+    const navigate = useNavigate();
+
+    const pages = ["projects","blogs","timeline"]
 
     return ( 
         <div className="home">
@@ -41,7 +46,7 @@ const Home = () => {
                         <td>
                             <div className="gear-image">
                                 <div className="image-container">
-                                    {/* HACK: height is hardcoded, find a better way  */}
+                                    {/* HACK: height is hardcoded, find a better way - wait no it's not???  */}
                                     <img className="responsive" src={require('./img/website.jpg')} loading="lazy" alt="hi"/>
                                     {/* TODO: Get the gear working, plz it is cool */}
                                     {/* <img className="gear" src={require('./img/gear.gif')} loading="lazy" alt="gear"/> */}
@@ -57,14 +62,41 @@ const Home = () => {
             <br />
             <hr />
 
-            <div className="box-header">
-                <Box component="section" alignItems="center" justifyContent="center" sx={{ margin: 'auto', p: 2, width:'50%' }}>
-                <h2><span>My Journey</span></h2> <br /> 
-                </Box> 
-            </div>
+            <div className="pages-slideshow box-header">
+                <h2><span>Things to look at</span> </h2> <br /> 
             
+                <Slide>
+                    {pages.map((pageName, index)=> (
+                        <div key={index}>
+                            <div className="preview-wrapper" onClick={()=>navigate(`/${pageName}`)}>
+                                <iframe
+                                    src={`#/${pageName}`}
+                                    title="Preview of timeline"
+                                    className="page-preview"
+                                    style={{
+                                        pointerEvents: 'none'
+                                    }}
+                                    loading = "lazy"
+                                    onLoad = {
+                                        (e)=>{
+                                            const iframe = e.target;
+                                            try{
+                                                iframe.contentWindow.scrollTo(0,100);
+                                            } catch (err){
+                                                console.log("Failed to scroll iframe", err)
+                                            }
+                                        }
+                                    }
+                                />
+                            </div>
+                        </div>
+                    ))} 
+                    
+                </Slide>
+            </div>
+    
 
-            <Timeline />
+            {/* <Timeline /> */}
 
         </div>
 

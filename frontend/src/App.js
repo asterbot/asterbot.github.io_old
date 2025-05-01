@@ -8,6 +8,7 @@ import NotFound from './NotFound'
 import ProjectDetails from './projects/ProjectDetails';
 import Blogs from './blogs/Blogs';
 import Blog from './blogs/Blog';
+import Timeline from './Timeline';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
             <Route path="/projects/:id" element={<ProjectDetails />} />
             <Route path="/blogs" element={<Blogs/>} />
             <Route path="/blogs/:id" element={<Blog />} />
+            <Route path="/timeline" element={<Timeline/>} />
             <Route path="*" element={<NotFound />} />
           </Routes>
 
