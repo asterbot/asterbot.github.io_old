@@ -4,10 +4,10 @@ import { Box } from '@mui/material';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faItchIo, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
-// Timeline components
-// import Timeline from './Timeline';
+// Navigation
 import { useNavigate } from 'react-router-dom';
 
+// For the slideshow of pages iframes
 import { Slide } from 'react-slideshow-image';
 
 const Home = () => {
@@ -49,7 +49,7 @@ const Home = () => {
                                     {/* HACK: height is hardcoded, find a better way - wait no it's not???  */}
                                     <img className="responsive" src={require('./img/website.jpg')} loading="lazy" alt="hi"/>
                                     {/* TODO: Get the gear working, plz it is cool */}
-                                    {/* <img className="gear" src={require('./img/gear.gif')} loading="lazy" alt="gear"/> */}
+                                    {/* <img className="gear" src={require('./img/gear.gif')} loading="lazy" alt="gear"/>  */}
                                 </div>
                             </div>
                         </td>
