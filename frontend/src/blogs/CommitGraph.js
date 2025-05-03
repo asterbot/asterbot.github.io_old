@@ -62,10 +62,7 @@ const CommitGraph = () => {
           // addCommit(cool_stuff, "Sleep sort")
 
           // const school = main.branch("School");
-          // addCommit(school, "OS course")
-
-          addCommit(main,"Sample Blog");
-
+          // addCommit(school, "3A review")
 
         }}
       </Gitgraph>
